@@ -1,0 +1,158 @@
+@font-face {
+    font-family: OpenSansRegular;
+    src: url("../fonts/OpenSansRegular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url("../fonts/OpenSansBold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: OpenSansSemiBold;
+    src: url("../fonts/OpenSansSemiBold.ttf") format("opentype");
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: OpenSansRegular;
+    font-size: 14px;
+    color: #86878b;
+    width: 100%;
+
+}
+
+.container {
+    display: flex;
+    padding: 0 147px;
+}
+
+.col-sm-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.logo img {
+    height: 27px;
+}
+
+.navbar-main {
+    background: #000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    display: block;
+    padding: 25px;
+}
+
+.nav-link {
+    font-family: OpenSansSemiBold;
+    color: #fff;
+    text-decoration: none;
+}
+
+#firstScreen {
+    height: 640px;
+    background: url(../img/firstScreen.png) no-repeat 0 33%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#firstScreen .container .col-sm-6 .logo img {
+    height: 60px;
+    padding: 15px 0;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 36px;
+    padding: 15px 0 30px 0;
+}
+
+.w-64 {
+    width: 64px;
+}
+
+.leftSide p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding: 30px 0 45px 0;
+}
+
+.leftSideBtn {
+    background-color: transparent;
+    border: 2px solid #f5f5f5;
+    font-family: OpenSansSemiBold;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 0;
+    width: 135px;
+}
+
+/*form style*/
+
+.form {
+    height: 360px;
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form h1 {
+    font-family: OpenSansBold;
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    margin: 15px 38px;
+    border: none;
+    border-bottom: 2px solid #d6d6d6;
+    font-family: OpenSansRegular;
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.form-btn {
+    width: 100%;
+    background: #ff9b51;
+    font-family: OpenSansSemiBold;
+    font-size: 15px;
+    color: #fff;
+    height: 55px;
+    border: none;
+}

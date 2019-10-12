@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <nav>
-           <div class="logo"></div>
-            <ul>
-                <li>
-                    <a href="#Features">Features</a>
-                </li>
-                <li>
-                    <a href="#About">About</a>
-                </li>
-                <li>
-                    <a href="#Pricing">Pricing</a>
-                </li>
-                <li>
-                    <a href="#Reviews">Reviews</a>
-                </li>
-                <li>
-                    <a href="#Contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="navbar-main">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="#"><img class="logo" src="./img/logo.png" alt="AXIT"></a>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#Features" class="nav-link">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#About" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Pricing" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Reviews" class="nav-link">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section id="firstScreen">
+            <div class="container">
+                <div class="col-sm-6">
+                    <div class="leftSide">
+                        <div class="logo">
+                            <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</div>
+                        <hr class="w-64">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                            accumsan et viverra justo commodo.</p>
+                        <button class="leftSideBtn">Download</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="rightSide">
+                        <div class="form">
+                            <h1>Try Your <span style="color: #ff8b38">FREE</span> Trial Today</h1>
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button class="form-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
 </body>
+
 </html>

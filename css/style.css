@@ -152,6 +152,9 @@ li {
     padding-left: 15px;
 }
 
+.p0 {
+    padding: 0;
+}
 /*navbar-main style*/
 .logo img {
     height: 27px;
@@ -480,6 +483,7 @@ input::placeholder {
     font-family: OpenSansSemiBold;
     color: #86878b;
     padding-bottom: 15px;
+    font-style: italic;
 }
 
 .popular {

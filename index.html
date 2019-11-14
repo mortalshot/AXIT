@@ -3,62 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <div class="navbar-main">
-            <div class="container">
-                <nav class="navbar">
-                    <div class="logo">
-                        <a href="#"><img class="logo" src="./img/logo.png" alt="AXIT"></a>
-                    </div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#Features" class="nav-link">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#About" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Pricing" class="nav-link">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Reviews" class="nav-link">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="navbar-main-wrapper">
+                <div class="navbar-main__logo">
+                    <a href="#"><img class="logo" src="./img/logo.png" alt="AXIT"></a>
+                </div>
+                <div class="navbar-main__nav">
+                    <nav class="navbar">
+                        <div class="burger">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#Features" class="nav-link">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#About" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Pricing" class="nav-link">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Reviews" class="nav-link">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Contact" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-        <section id="firstScreen">
-            <div class="container">
-                <div class="col-sm-6">
-                    <div class="leftSide">
-                        <div class="logo">
-                            <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                        </div>
-                        <div class="title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</div>
-                        <hr class="w-64">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                            accumsan et viverra justo commodo.</p>
+
+        <section id="firstScreen" class="firstScreen">
+            <div class="firstScreen-wrapper">
+                <div class="firstScreen-leftSide">
+                    <div class="firstScreen-leftSide__logo">
+                        <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="firstScreen-leftSide__title">
+                        MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+                    </div>
+                    <hr class="w-64">
+                    <div class="firstScreen-leftSide__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                        accumsan et viverra justo commodo.
+                    </div>
+                    <div class="firstScreen-leftSide__button">
                         <button class="leftSideBtn">Download</button>
                     </div>
                 </div>
-
-                <div class="col-sm-6">
-                    <div class="rightSide">
-                        <div class="form">
+                <div class="firstScreen-rightSide">
+                    <div class="firstScreen-rightSide-form firstScreen-rightSide-form_display">
+                        <div class="firstScreen-rightSide-form__title">
                             <h1>Try Your <span style="color: #ff8b38">FREE</span> Trial Today</h1>
+                        </div>
+                        <div class="firstScreen-rightSide-form__input">
                             <input type="text" placeholder="Name">
                             <input type="email" placeholder="Email">
                             <input type="password" placeholder="Password">
+                        </div>
+                        <div class="firstScreen-rightSide-form__button">
                             <button class="form-btn">Get Started</button>
                         </div>
                     </div>
@@ -66,7 +85,350 @@
             </div>
         </section>
 
+        <section id="brandBar">
+            <div class="container align-center brandBar-wrapper">
+                <div class="col-sm-5">
+                    <div class="media">
+                        <h2>Social Media</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet.</p>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="icon brandBarIcon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </header>
+    <section id="Features" class="features">
+        <div class="features-wrapper">
+            <ul class="features-tab-tabs">
+                <li class="active">Tab 1</li>
+                <li>Tab 2</li>
+                <li>Tab 3</li>
+            </ul>
+            <div class="features-tab-content">
+                <div class="features-tab-content__title">
+                    <h2>Tabs with soft transitioning effect.</h2>
+                </div>
+                <div class="features-tab-content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                    penatibus et magnis dis parturient montes.
+
+                    <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.
+                </div>
+                <div class="features-tab-content__button">
+                    <button class="featuresBtn">Download</button>
+                </div>
+            </div>
+            <div class="features-tab-img">
+                <img src="./img/town.png" alt="AXIT" class="responsive">
+            </div>
+        </div>
+    </section>
+
+    <section id="About" class="about">
+        <div class="about-wrapper">
+            <div class="about-leftSection">
+                <div class="about-leftSection__img">
+                    <img src="./img/features2img.png" alt="AXIT" class="responsive">
+                </div>
+            </div>
+            <div class="about-rightSection">
+                <div class="about-rightSection-subList">
+                    <div class="rightSection-subList__title">
+                        <h2>Sub list section</h2>
+                    </div>
+                    <hr class="w-64">
+                    <div class="rightSection-subList__text">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Aenean
+                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                        accumsan et viverra justo commodo.
+                    </div>
+                </div>
+
+                <div class="about-rightSection-subTitle">
+                    <div class="about-rightSection-subTitle__img">
+                        <img src="./img/download.png" alt="download">
+                    </div>
+                    <div class="about-rightSection-subTitle-list">
+                        <div class="about-rightSection-subTitle-list__title">
+                            <h3>Title</h3>
+                        </div>
+                        <div class="about-rightSection-subTitle-list__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet.
+                        </div>
+                    </div>
+                </div>
+                <div class="about-rightSection-subTitle">
+                    <div class="about-rightSection-subTitle__img">
+                        <img src="./img/upload.png" alt="upload">
+                    </div>
+                    <div class="about-rightSection-subTitle-list">
+                        <div class="about-rightSection-subTitle-list__title">
+                            <h3>Title</h3>
+                        </div>
+                        <div class="about-rightSection-subTitle-list__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet. Proin gravida dolor
+                            sit amet lacus accumsan et viverra justo commodo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="standartPicture" class="flex-center">
+        <div class="container stantartPicture-wrapper">
+            <div class="col-sm-7">
+                <h2>Standard Picture Section</h2>
+                <hr class="w-64">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                    et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                    natoque penatibus et magnis dis parturient montes. <br> <br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.</p>
+            </div>
+            <div class="col-sm-5">
+                <img src="./img/features3img.png" alt="AXIT" class="responsive">
+            </div>
+        </div>
+    </section>
+
+    <section id="OurProcess" class="flex-center text-center">
+        <div class="container flex-column">
+            <div class="isAwesome">
+                <h1>Why is this awesome</h1>
+                <hr class="w-64">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="process justify-center OurProcess-process">
+                <div class="col-sm-4">
+                    <img src="./img/bulb.png" alt="">
+                    <h2>Thoughtful Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./img/keyboard.png" alt="">
+                    <h2>Well Crafted</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./img/lightning.png" alt="">
+                    <h2>Easy to Customize</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Pricing">
+        <div class="container flex-column">
+            <div class="optionsTitle">
+                <h1>Pricing options</h1>
+                <hr class="w-64">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="pricing-rate d-flex justify-center" style="padding-bottom: 40px;">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Basic</h2>
+                            <div class="priceBlock">
+                                <div>$<span class="value">0</span></div>
+                                <p>Free for life</p>
+                            </div>
+                            <div class="popular"></div>
+                            <ul>
+                                <li>1 gb of space </li>
+                                <li>10 gb of bandwidth</li>
+                                <li>3 websites</li>
+                                <li>Basic Customization</li>
+                                <li>wordpress integration</li>
+                                <li>email support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card marginTopBack35px">
+                        <div class="card-body">
+                            <h2>Professional</h2>
+                            <div class="priceBlock">
+                                <div>$<span class="value">19</span></div>
+                                <p>Monthly Payment</p>
+                            </div>
+                            <div class="popular">OUR MOST POPULAR</div>
+                            <ul>
+                                <li>5 gb of space</li>
+                                <li>50 gb of bandwidth</li>
+                                <li>12 websites</li>
+                                <li>Advanced Customization</li>
+                                <li>wordpress integration</li>
+                                <li>email support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Enterprice</h2>
+                            <div class="priceBlock">
+                                <div>$<span class="value">70</span></div>
+                                <p>Monthly Payment</p>
+                            </div>
+                            <div class="popular"></div>
+                            <ul>
+                                <li>Unlimited space</li>
+                                <li>unlimited bandwidth</li>
+                                <li>100 websites</li>
+                                <li>Advanced Customization</li>
+                                <li>wordpress integration</li>
+                                <li>24/7 customer support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Reviews" class="flex-center flex-column justify-center">
+        <div class="container flex-column">
+            <div class="row reviewTitle">
+                <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+                <hr class="w-64">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="row d-flex justify-center reviews-comment">
+                <div class="col-sm-4">
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <div class="person d-flex">
+                            <img src="./img/avatar.png" alt="">
+                            <div class="personProperties d-flex flex-column justify-center">
+                                <h2 class="name">Jeremy H.</h2>
+                                <div class="profession">Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <div class="person d-flex">
+                            <img src="./img/avatar.png" alt="">
+                            <div class="personProperties d-flex flex-column justify-center">
+                                <h2 class="name">John S.</h2>
+                                <div class="profession">Freelancer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="comment">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <div class="person d-flex">
+                            <img src="./img/avatar.png" alt="">
+                            <div class="personProperties d-flex flex-column justify-center">
+                                <h2 class="name">Susan W.</h2>
+                                <div class="profession">Photographer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="axureSection" class="flex-center justify-center">
+        <div class="flex-center flex-column">
+            <h1>STYLISH AXURE DESIGN</h1>
+            <hr class="w-64">
+            <p>Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+            <button class="leftSideBtn">Download</button>
+        </div>
+    </section>
+
+    <section id="Contact" class="flex-center flex-column justify-center">
+        <div class="title flex-center flex-column">
+            <h1>CONTACT US</h1>
+            <hr class="w-64">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="contact-form">
+            <div class="contact-form-wrapper">
+                <div class="contact-form__input">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="contact-form__textarea">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="contact-form__button">
+                <button class="featuresBtn">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footerIcon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-share-alt"></i></a>
+                <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="footerCopyright" style="font-size: 12px">
+                © 2015 Axure Themes
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c66887870f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
